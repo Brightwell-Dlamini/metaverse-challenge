@@ -19,6 +19,7 @@ function Login() {
           height={200}
           width={200}
           className="object-cover rounded-full"
+          alt="profileLogo"
         />
 
         {/* login button */}
@@ -35,6 +36,7 @@ function Login() {
           src="https://links.papareact.com/55n"
           layout="fill"
           objectFit="cover"
+          alt="background"
         />
       </div>
     </div>
