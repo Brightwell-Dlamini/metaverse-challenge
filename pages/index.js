@@ -5,7 +5,7 @@ import Login from "../components/Login";
 import Messages from "../components/Messages";
 
 export default function Home() {
-  const { isAuthenticated, logout } = useMoralis();
+  const { isAuthenticated } = useMoralis();
 
   if (!isAuthenticated) return <Login />;
   return (
@@ -16,17 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.jpg" />
       </Head>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto">
         <Header />
 
         <Messages />
       </div>
-      <button
-        onClick={logout}
-        className="bg-yellow-500 p-3 font-bold animate-pulse rounded-lg"
-      >
-        Logout
-      </button>
     </div>
   );
 }
